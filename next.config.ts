@@ -14,15 +14,15 @@ const nextConfig = {
       {
         source: '/api/:path*',
         headers: [
-          { key: 'Access-Control-Allow-Origin', value: 'http://localhost:9001' },
+          { key: 'Access-Control-Allow-Origin', value: 'https://omb-production-ba27.up.railway.app' },
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
         ],
       },
     ];
   },
   env: {
-    API_BASE_URL: 'http://localhost:9001',
+    API_BASE_URL: 'https://omb-production-ba27.up.railway.app',
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
