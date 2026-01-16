@@ -31,7 +31,7 @@ export default function Signup() {
         // Convert phone to bigint format (remove any non-digit characters)
         const phoneNumber = BigInt(formData.phone.replace(/\D/g, ''));
         
-        const response = await axios.post('http://localhost:9001/admin/users/register', {
+        const response = await axios.post('https://omb-production-ba27.up.railway.app/admin/users/register', {
           ...formData,
           phone: phoneNumber.toString() // Send as string to avoid JSON serialization issues
         });

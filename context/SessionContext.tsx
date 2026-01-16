@@ -51,7 +51,7 @@ export const SessionProvider: React.FC<SessionProviderProps> = ({ children }) =>
       }
 
     
-      const response = await axios.get('http://localhost:9001/admin/users/session', {
+      const response = await axios.get('https://omb-production-ba27.up.railway.app/admin/users/session', {
         withCredentials: true,
       });
       
@@ -88,7 +88,7 @@ export const SessionProvider: React.FC<SessionProviderProps> = ({ children }) =>
   const login = async (email: string, password: string) => {
     try {
       setIsLoading(true);
-      const response = await axios.post('http://localhost:9001/admin/users/login', {
+      const response = await axios.post('https://omb-production-ba27.up.railway.app/admin/users/login', {
         email,
         password
       }, {
@@ -141,7 +141,7 @@ export const SessionProvider: React.FC<SessionProviderProps> = ({ children }) =>
 
   const logout = async () => {
     try {
-      await axios.post('http://localhost:9001/admin/users/logout', {}, {
+      await axios.post('https://omb-production-ba27.up.railway.app/admin/users/logout', {}, {
         withCredentials: true,
       });
     } catch (error) {
