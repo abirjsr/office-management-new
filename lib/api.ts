@@ -36,7 +36,7 @@
 // utils/api.ts
 import axios from 'axios';
 
-const API_BASE_URL = 'https://omb-production-ba27.up.railway.app/admin/users';
+const API_BASE_URL = 'https://omb-production-7172.up.railway.app/admin/users';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

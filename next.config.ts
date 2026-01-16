@@ -14,14 +14,14 @@ const nextConfig = {
       {
         source: '/api/:path*',
         headers: [
-          { key: 'Access-Control-Allow-Origin', value: 'https://omb-production-ba27.up.railway.app' },
+          { key: 'Access-Control-Allow-Origin', value: 'https://omb-production-7172.up.railway.app' },
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
         ],
       },
     ];
   },
   env: {
-    API_BASE_URL: 'https://omb-production-ba27.up.railway.app',
+    API_BASE_URL: 'https://omb-production-7172.up.railway.app',
   },
 };
 
