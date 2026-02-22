@@ -36,7 +36,7 @@
 // utils/api.ts
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:9001/admin/users';
+const API_BASE_URL = 'https://office-production-618e.up.railway.app/admin/users'; // Update this to your backend URL
 
 const api = axios.create({
   baseURL: API_BASE_URL,
