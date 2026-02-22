@@ -93,8 +93,7 @@ export default function Signin() {
 
         {/* Simple debug info */}
         <div className="mt-4 p-3 bg-gray-100 rounded-md text-xs">
-          <p>Backend: http://localhost:9001</p>
-          <p>Frontend: http://localhost:1900</p>
+          
         </div>
       </div>
     </div>
