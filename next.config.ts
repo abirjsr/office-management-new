@@ -7,7 +7,7 @@ import type { NextConfig } from "next";
 // export default nextConfig;
 
 
-/** @type {import('next').NextConfig} */
+
 const nextConfig = {
   async headers() {
     return [
